@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills & Talents</a></li>
+                <li><a href="aspirations.html">Future Aspirations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="education">
+        <div class="square-container">
+            <div class="square left">
+                <img src="edu1.jpg" alt="School Days">
+                <p>This is where the Introduction to education and its journey for me begun it was quite an experience.[MARSABIT PRIMARY SCHOOL.]</p>
+            </div>
+            <div class="square right">
+                <img src="hsco.jpg" alt="High School">
+                <p>It's at this level i got to experience that there was more to this life than education and through, high school i got to learn new things.[MARSABIT BOYS HIGH SCHOOL.]</p>
+            </div>
+            <div class="square left">
+                <img src="uni.jpeg" alt="University">
+                <p>Currently at Pursuing higher education so that i can have something to offer back to the society.[ZETECH UNIVERSITY.]</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('educationb.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .square-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-left: 200px;
+            padding: 50px;
+        }
+        .square {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.2em;
+            width: 80%;
+            max-width: 800px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 3px solid white;
+            overflow: hidden;
+            position: relative;
+        }
+        .square.left {
+            flex-direction: row;
+        }
+        .square.right {
+            flex-direction: row-reverse;
+        }
+        .square img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid white;
+        }
+        .square p {
+            color: black;
+            max-width: 250px;
+        }
+        footer {
+            margin-left: 200px;
+            width: calc(100% - 200px);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Childhood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills & Talents</a></li>
+                <li><a href="aspirations.html">Future Aspirations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="childhood">
+        <div class="circle-container">
+            <div class="circle left">
+                <img src="baby.webp" alt="Childhood Memory 1">
+                <p>Born in the small town of Marsabit,Kenya i can't say i knew more at that time but from my parents' stories i do understand that it was quite a memorable worth keeping moments.</p>
+            </div>
+            <div class="circle right">
+                <img src="secod1.jpeg" alt="Childhood Memory 2">
+                <p>Memories during my growth where we use to follow and abide to the norms of society and of course mostly playing it was a major bedrock foundation of behaviours of the man i'm now.</p>
+            </div>
+            <div class="circle left">
+                <img src="third.jpeg" alt="Childhood Memory 3">
+                <p>At this stage is where most scars from wounds come from as it was the start of naughtiness but still the scars were painfull to acquire but worth and i managed to learn a few things.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('chidb.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        nav {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .circle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-left: 200px;
+            padding: 50px;
+        }
+        .circle {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.2em;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 30%;
+            background: rgba(255, 255, 255, 0.2);
+            border: 3px solid white;
+        }
+        .circle.left {
+            flex-direction: row;
+        }
+        .circle.right {
+            flex-direction: row-reverse;
+        }
+        .circle img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .circle p {
+            color: black;
+        }
+        footer {
+            margin-left: 200px;
+            width: calc(100% - 200px);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</body>
+</html>

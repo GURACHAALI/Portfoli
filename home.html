@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="childhood.html">Childhood</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills & Talents</a></li>
+                <li><a href="aspirations.html">Future Aspirations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="hero">
+        
+        <h2>My Enlightment in life Itself</h2>
+        <div class="profile-pic">
+            <img src="pp.JPG" alt="Profile Picture">
+        </div>
+        <p>Name:Guracha Ali</p>
+        <p>Memories, Achievement, and Future Aspirations</p>
+    
+    </section>
+
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.5s;
+            background: url('back.webp') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        nav {
+            width: 200px;
+            height: 100vh;
+            background:transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 50px;
+            background:transparent;
+            color: white;
+            margin-left: 200px;
+            text-align: center;
+        }
+        header h1 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+        }
+        #hero {
+            flex: 1;
+            padding: 50px 20px;
+            animation: fadeIn 1.5s;
+            margin-left: 200px;
+            text-align: center;
+        }
+        #hero h2 {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 2.5em;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 10px auto;
+            border: 3px solid white;
+            left: 0;
+            transform: translateX(-50%);
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #hero p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+            background:transparent;
+            color: white;
+            margin-left: -80px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        footer {
+            margin-left: 200px;
+            width: calc(100% - 200px);
+            text-align: center;
+            padding: 20px;
+            background: transparent;
+            color: white;
+            position: absolute;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const page = window.location.pathname.split("/").pop().replace(".html", "");
+            document.body.classList.add(page || "index");
+        });
+        
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
